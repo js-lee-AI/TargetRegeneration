@@ -337,16 +337,7 @@ The gate keeps a slot only if every earlier corpus token in the block is the tar
 
 ## Citation
 
-```bibtex
-@misc{lee2026targetregeneration,
-  title  = {Target Regeneration Shrinks the Gains of Draft-Training Objectives in Speculative Decoding},
-  author = {Lee, Jungseob and Seong, Hogun and Choi, Euijun and Eo, Sugyeong},
-  year   = {2026},
-  url    = {https://github.com/js-lee-AI/TargetRegeneration}
-}
-```
-
-GitHub's "Cite this repository" button reads [CITATION.cff](CITATION.cff).
+Citation details and BibTeX will be added when the paper's preprint is publicly available.
 
 ## License
 
