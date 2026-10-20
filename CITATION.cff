@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "TargetRegeneration: code for Target Regeneration Shrinks the Gains of Draft-Training Objectives in Speculative Decoding"
+type: software
+authors:
+  - family-names: Lee
+    given-names: Jungseob
+  - family-names: Seong
+    given-names: Hogun
+  - family-names: Choi
+    given-names: Euijun
+  - family-names: Eo
+    given-names: Sugyeong
+repository-code: "https://github.com/js-lee-AI/TargetRegeneration"
+license: MIT
+version: "0.1.0"
+date-released: "2026-10-21"
+keywords:
+  - "speculative-decoding"
+  - "draft-models"
+  - "knowledge-distillation"
+  - "vision-language-models"
+preferred-citation:
+  type: generic
+  title: "Target Regeneration Shrinks the Gains of Draft-Training Objectives in Speculative Decoding"
+  authors:
+    - family-names: Lee
+      given-names: Jungseob
+    - family-names: Seong
+      given-names: Hogun
+    - family-names: Choi
+      given-names: Euijun
+    - family-names: Eo
+      given-names: Sugyeong
+  year: 2026
+  url: "https://github.com/js-lee-AI/TargetRegeneration"

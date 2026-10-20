@@ -1,0 +1,2 @@
+# Regeneration (regenerate.py) runs in its own environment, since vLLM pins its own torch.
+vllm==0.15.1

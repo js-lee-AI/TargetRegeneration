@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "targetregen"
+dynamic = ["version"]
+description = "Draft-training objectives for speculative decoding, measured against a target-regenerated baseline"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Jungseob Lee" }]
+keywords = ["speculative-decoding", "draft-models", "knowledge-distillation", "vision-language-models", "llm-inference"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+# The metrics, the bootstrap and the reference objectives need numpy at most, so the paper's numbers
+# rebuild on any laptop. The GPU pipeline has its own pins in pipeline/requirements.txt.
+dependencies = ["numpy>=1.23"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+targetregen = "targetregen.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/js-lee-AI/TargetRegeneration"
+Issues = "https://github.com/js-lee-AI/TargetRegeneration/issues"
+
+[tool.setuptools.dynamic]
+version = { attr = "targetregen.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["targetregen*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

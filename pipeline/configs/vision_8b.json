@@ -1,0 +1,20 @@
+{
+  "target": "Qwen/Qwen3-VL-8B-Instruct",
+  "draft_init": "z-lab/Qwen3-8B-DFlash-b16",
+  "is_vlm": true,
+  "max_length": 4096,
+  "chat_template": "qwen2-vl",
+  "embedding_key": "model.language_model.embed_tokens.weight",
+  "lm_head_key": "lm_head.weight",
+  "kd_scale": 1.013441,
+  "epochs": 3,
+  "global_batch_size": 24,
+  "learning_rate": 0.0014697,
+  "block_size": 16,
+  "num_anchors": 128,
+  "gamma": 7.0,
+  "topk": 8,
+  "min_pixels": 50176,
+  "max_pixels": 200704,
+  "data_order_seed": 0
+}
